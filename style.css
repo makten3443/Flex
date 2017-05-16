@@ -1,0 +1,217 @@
+/* En intuitiv box-modell */
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Nollställ default avstånden */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* typografi */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: sans-serif;
+    color: #FFF;
+}
+a {
+    font-family: sans-serif;
+    color: #48B5DB;
+    text-decoration: none;
+}
+a:hover {
+    color: #48B55B;
+}
+footer {
+    font-size: 12px;
+}
+
+/* layout */
+
+body {
+    background: url(material/images/bg.gif);
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.container .glow {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+}
+.container header {
+    background: #000;
+    height: 100%;
+    padding: 20px 0 0 20px;
+    display: flex;
+}
+.front {
+    height: 100%;
+    background: linear-gradient(#000 0%, #191919 5%, #000 5%, #000 95%, #191919 95%, #000 100%);
+    padding: 16px 0 16px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.container .kolumner {
+    background: #000;
+    height: 470px;
+    padding-top: 50px;
+}
+.container footer {
+    padding: 2%;
+    height: 100%;
+}
+
+/* loggan */
+
+header h1 {
+    color: aqua;
+    width: 215px;
+    height: 47px;
+}
+
+/* meny */
+
+li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 5%;
+    font-size: 16px;
+}
+ul {
+    display: inline;
+}
+a {
+    text-transform: uppercase;
+}
+
+/*font-delen*/
+
+.mitten {
+    display: flex;
+}
+.front section {
+    width: 380px;
+    padding: 70px 0 0 0;
+}
+.front h2 {
+    width: 216px;
+    height: 30px;
+}
+.front .text {
+    margin: 40px 0;
+    display: inline;
+}
+.front .knapp {
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #a7cfdf 0%, #23538a 100%);
+    padding: 20px;
+    border: 1px solid #48B5DB;
+    border-radius: 10px;
+    width: 170px;
+}
+.front img {
+    margin-left: 5%;
+    width: 420px;
+    height: 308px;
+}
+
+/*4 kolumner/artiklar */
+
+.kolumner {
+    display: flex;
+    overflow: hidden;
+}
+.kolumner article {
+    width: 215px;
+    margin-left: 7.3%;
+    height: 80%;
+}
+.kolumner .Historiska h3 {
+    text-indent: -9999px;
+    background: url("bilder/slot.jpg");
+    height: 146px;
+    overflow: hidden;
+    display: flex;
+}
+.kolumner .steder h3 {
+    text-indent: -9999px;
+    background: url("bilder/zadar.jpg");
+    height: 147px;
+    overflow: hidden;
+    display: flex;
+}
+.kolumner .Festivaler h3 {
+    text-indent: -9999px;
+    background: url("bilder/splitfestival.jpg");
+    height: 146px;
+    overflow: hidden;
+    display: flex;
+}
+.kolumner .oar h3 {
+    text-indent: -9999px;
+    background: url("bilder/oar.jpg");
+    height: 146px;
+    overflow: hidden;
+    display: flex;
+}
+
+/*hover*/
+
+.kolumner p {
+    font-size: 14px;
+    line-height: 25px;
+    margin: 25px 13px;
+    overflow: hidden;
+    display: flex;
+}
+
+/*sidfoten*/
+
+fooer {
+    display: flex;
+    overflow: hidden;
+}
+footer .copyright {
+    float: left;
+}
+footer ul {
+    float: left;
+    margin: 0 0 0 100px;
+}
+footer li {
+    display: inline;
+    list-style-type: none;
+    margin: 0 10px;
+}
+footer .Back_to_top {
+    float: right;
+    background-repeat: no-repeat;
+    padding: 5px 0 5px 50px;
+}
+footer .text1 {
+    color: aqua;
+    margin: 0 10px;
+    display: flex;
+}
